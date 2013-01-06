@@ -1,0 +1,16 @@
+{
+  "name": "testing-node-with-mocha",
+  "version": "0.1.0",
+  "author": "Pete Hawkins <pete@phawk.co.uk>",
+  "description": "a barebones example of testing node.js code with mocha",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "chai": "~1.4.2",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.8"
+  }
+}
