@@ -73,6 +73,12 @@ suite("Bank Account Tests", function() {
             expect(account.getBalance()).to.equal(1175);
         });
 
+        test("should allow negative balances", function() {
+            var account = Account.create(-101);
+
+            expect(account.getBalance()).to.equal(-101);
+        });
+
     });
 
 });
