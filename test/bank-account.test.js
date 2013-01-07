@@ -48,6 +48,12 @@ suite("Bank Account Tests", function() {
             expect(account.getBalance()).to.equal(850);
         });
 
+        test("can't withdraw negative money", function() {
+            var account = Account.create(100);
+            account.withdraw(-100);
+            expect(account.getBalance()).to.equal(100);
+        });
+
     });
 
     suite("multiple accounts", function() {
